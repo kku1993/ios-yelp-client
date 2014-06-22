@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4511" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3745"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="196" id="fuU-cj-tLT" customClass="RestaurantCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="196"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fuU-cj-tLT" id="zNu-7d-zWz">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="195"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GWR-Nz-jj7">
+                        <rect key="frame" x="20" y="18" width="122" height="159"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="122" id="mdy-f1-Kqz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resturant Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="oZN-CK-bX8">
+                        <rect key="frame" x="150" y="18" width="225" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="6BG-7n-voT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y9f-7D-FUn">
+                        <rect key="frame" x="150" y="47" width="145" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="8Sq-ax-iSX"/>
+                            <constraint firstAttribute="width" constant="145" id="hgb-dz-Qd2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I10-AC-jxG">
+                        <rect key="frame" x="322" y="50" width="53" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="BN8-ki-icZ">
+                        <rect key="frame" x="150" y="87" width="230" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Styles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhr-S1-kRh">
+                        <rect key="frame" x="150" y="154" width="230" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="64y-Lf-VHc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GWR-Nz-jj7" firstAttribute="top" secondItem="zNu-7d-zWz" secondAttribute="top" constant="18" id="1o2-6Y-06I"/>
+                    <constraint firstItem="BN8-ki-icZ" firstAttribute="leading" secondItem="GWR-Nz-jj7" secondAttribute="trailing" constant="8" id="2Mg-Ba-9a4"/>
+                    <constraint firstAttribute="trailing" secondItem="BN8-ki-icZ" secondAttribute="trailing" constant="20" id="6f0-Qm-MPW"/>
+                    <constraint firstItem="Y9f-7D-FUn" firstAttribute="top" secondItem="oZN-CK-bX8" secondAttribute="bottom" constant="5" id="9Gf-fb-Nd9"/>
+                    <constraint firstItem="zhr-S1-kRh" firstAttribute="top" secondItem="BN8-ki-icZ" secondAttribute="bottom" constant="7" id="EMl-gy-GFI"/>
+                    <constraint firstAttribute="trailing" secondItem="zhr-S1-kRh" secondAttribute="trailing" constant="20" id="GQd-Nc-aRS"/>
+                    <constraint firstAttribute="trailing" secondItem="oZN-CK-bX8" secondAttribute="trailing" constant="25" id="GVv-l6-Gv3"/>
+                    <constraint firstItem="Y9f-7D-FUn" firstAttribute="top" secondItem="oZN-CK-bX8" secondAttribute="bottom" constant="5" id="Hwh-tx-tgN"/>
+                    <constraint firstItem="I10-AC-jxG" firstAttribute="top" secondItem="oZN-CK-bX8" secondAttribute="bottom" constant="8" id="LNh-Bp-f0Q"/>
+                    <constraint firstItem="BN8-ki-icZ" firstAttribute="top" secondItem="Y9f-7D-FUn" secondAttribute="bottom" constant="10" id="M7g-1R-yTf"/>
+                    <constraint firstItem="Y9f-7D-FUn" firstAttribute="leading" secondItem="GWR-Nz-jj7" secondAttribute="trailing" constant="8" id="O0J-do-nAd"/>
+                    <constraint firstItem="oZN-CK-bX8" firstAttribute="top" secondItem="zNu-7d-zWz" secondAttribute="top" constant="18" id="R0v-nG-Fx2"/>
+                    <constraint firstItem="zhr-S1-kRh" firstAttribute="leading" secondItem="GWR-Nz-jj7" secondAttribute="trailing" constant="8" id="cdG-Xx-UwT"/>
+                    <constraint firstItem="I10-AC-jxG" firstAttribute="leading" secondItem="Y9f-7D-FUn" secondAttribute="trailing" constant="27" id="d55-Sj-VzD"/>
+                    <constraint firstItem="oZN-CK-bX8" firstAttribute="leading" secondItem="GWR-Nz-jj7" secondAttribute="trailing" constant="8" id="lfa-Rw-Omn"/>
+                    <constraint firstItem="BN8-ki-icZ" firstAttribute="top" secondItem="Y9f-7D-FUn" secondAttribute="bottom" constant="10" id="oO7-7L-BM9"/>
+                    <constraint firstItem="zhr-S1-kRh" firstAttribute="top" secondItem="BN8-ki-icZ" secondAttribute="bottom" constant="7" id="oOg-Zo-FQ2"/>
+                    <constraint firstItem="BN8-ki-icZ" firstAttribute="top" secondItem="I10-AC-jxG" secondAttribute="bottom" constant="16" id="pOa-uT-BKD"/>
+                    <constraint firstItem="I10-AC-jxG" firstAttribute="leading" secondItem="Y9f-7D-FUn" secondAttribute="trailing" constant="27" id="tlx-Rr-BgY"/>
+                    <constraint firstAttribute="bottom" secondItem="GWR-Nz-jj7" secondAttribute="bottom" constant="18" id="v0p-cf-IF3"/>
+                    <constraint firstItem="GWR-Nz-jj7" firstAttribute="leading" secondItem="zNu-7d-zWz" secondAttribute="leading" constant="20" id="v5q-hr-GZn"/>
+                    <constraint firstAttribute="bottom" secondItem="zhr-S1-kRh" secondAttribute="bottom" constant="20" id="yG2-vy-9oM"/>
+                    <constraint firstAttribute="trailing" secondItem="I10-AC-jxG" secondAttribute="trailing" constant="25" id="zIN-nB-yhU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="restaurantAddressLabel" destination="BN8-ki-icZ" id="nky-gf-2Ye"/>
+                <outlet property="restaurantImageView" destination="GWR-Nz-jj7" id="TLw-ye-OYU"/>
+                <outlet property="restaurantNameLabel" destination="oZN-CK-bX8" id="xJ5-7K-ltf"/>
+                <outlet property="restaurantReviewImage" destination="Y9f-7D-FUn" id="jQf-4l-jFM"/>
+                <outlet property="restaurantReviewLabel" destination="I10-AC-jxG" id="Ed0-oy-S3J"/>
+                <outlet property="restaurantStyleLabel" destination="zhr-S1-kRh" id="XKI-rn-xn8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
