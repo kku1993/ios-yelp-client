@@ -27,7 +27,11 @@
 - (void) initViews:(NSIndexPath *)indexPath {
     [super initViews:indexPath];
 
-    if(indexPath.section == 2) {
+    if(indexPath.section == 1) {
+        // categories
+        self.cellLabel.text = self.filters.categories[indexPath.row];
+    }
+    else if(indexPath.section == 2) {
         // distance
         self.cellLabel.text = [NSString stringWithFormat:@"%i miles", 5 * (indexPath.row + 1)];
     }

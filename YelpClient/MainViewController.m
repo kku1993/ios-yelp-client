@@ -15,15 +15,16 @@
 @property (nonatomic, strong) NSArray *restaurants;
 
 @property (weak, nonatomic) IBOutlet UITableView *restaurantsTableView;
+@property (nonatomic) FilterViewController *filterViewController;
 @end
 
 @implementation MainViewController
 
 - (void)onFilterButtonClicked {
-     FilterViewController *filterViewController = [[FilterViewController alloc] init];
-    [filterViewController setTitle:@"Filters"];
+    self.filterViewController = [[FilterViewController alloc] init];
+    [self.filterViewController setTitle:@"Filters"];
     
-    [self.navigationController pushViewController:filterViewController animated:true];
+    [self.navigationController pushViewController:self.filterViewController animated:true];
 }
 
 - (void)addSearchBar {
@@ -70,6 +71,17 @@
     self.restaurantsTableView.dataSource = self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (self.isMovingToParentViewController == NO) {
+        // returning from filters view
+        if(self.filterViewController.searchPressed) {
+            [self searchBarSearchButtonClicked:self.searchBar];
+        }
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -107,6 +119,9 @@
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    if([self.searchBar.text length] <= 0)
+        return;
+    
     [MMProgressHUD setPresentationStyle:MMProgressHUDPresentationStyleFade];
     [MMProgressHUD showWithTitle:@"Searching" status:[@"Searching for " stringByAppendingString:searchBar.text]];
     

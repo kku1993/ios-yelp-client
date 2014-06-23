@@ -13,8 +13,7 @@
 - (id)init {
     self = [super init];
     if(self) {
-        self.mostPopular = [NSArray arrayWithObjects:@"Open Now", @"Hot & New", @"Offering a Deal", @"Delivery", nil];
-        self.generalFeatures = [NSArray arrayWithObjects:@"Take-Out", @"Good for Groups", @"Takes Reservations", nil];
+        self.categories = [NSArray arrayWithObjects:@"Desserts", @"Foor Trucks", @"Gelato", @"Grocery", nil];
     }
     return self;
 }

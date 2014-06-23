@@ -10,8 +10,7 @@
 
 @interface Filters : NSObject
 
-@property (strong, nonatomic) NSArray *mostPopular;
-@property (strong, nonatomic) NSArray *generalFeatures;
+@property (strong, nonatomic) NSArray *categories;
 
 - (void)setPrice:(int)index;
 - (int)getPrice;

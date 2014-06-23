@@ -11,4 +11,6 @@
 
 @interface FilterViewController : UIViewController <UISearchBarDelegate, UISearchDisplayDelegate, UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic) BOOL searchPressed;
+
 @end

@@ -13,18 +13,20 @@
 
 @property (nonatomic) BOOL distanceSectionExpanded;
 @property (nonatomic) BOOL sortBySectionExpanded;
+@property (nonatomic) BOOL categoriesSectionExpanded;
 
 @end
 
 const int PRICE_SECTION = 0;
-const int MOST_POPULAR_SECTION = 1;
+const int CATEGORY_SECTION = 1;
 const int DISTANCE_SECTION = 2;
 const int SORT_BY_SECTION = 3;
-const int GENERAL_FEATURES_SECTION = 4;
+const int DEALS_SECTION = 4;
 
 @implementation FilterViewController
 
 - (void)startSearch {
+    self.searchPressed = true;
     [self.navigationController popToRootViewControllerAnimated:true];
 }
 
@@ -44,6 +46,8 @@ const int GENERAL_FEATURES_SECTION = 4;
     
     self.distanceSectionExpanded = false;
     self.sortBySectionExpanded = false;
+    self.categoriesSectionExpanded = false;
+    self.searchPressed = false;
     
     // add search button
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Search" style:UIBarButtonItemStylePlain target:self action:@selector(startSearch)];
@@ -64,12 +68,10 @@ const int GENERAL_FEATURES_SECTION = 4;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     switch(section) {
-        case MOST_POPULAR_SECTION:
-            // most popular
-            return 4;
-        case GENERAL_FEATURES_SECTION:
-            //general features
-            return 3;
+        case CATEGORY_SECTION:
+            return self.categoriesSectionExpanded ? 4 : 1;
+        case DEALS_SECTION:
+            return 1;
         case DISTANCE_SECTION:
             return self.distanceSectionExpanded ? 4 : 1;
         case SORT_BY_SECTION:
@@ -77,7 +79,6 @@ const int GENERAL_FEATURES_SECTION = 4;
         default:
             // price
             return 1;
-        
     }
 }
 
@@ -90,9 +91,9 @@ const int GENERAL_FEATURES_SECTION = 4;
             CellIdentifier = @"PriceCell";
             nibName = @"FilterPriceCell";
             break;
-        case MOST_POPULAR_SECTION:
-            CellIdentifier = @"MostPopularCell";
-            nibName = @"FilterSwitchCell";
+        case CATEGORY_SECTION:
+            CellIdentifier = @"CategoryCell";
+            nibName = @"FilterPlainCell";
             break;
         case DISTANCE_SECTION:
             CellIdentifier = @"DistanceCell";
@@ -102,8 +103,8 @@ const int GENERAL_FEATURES_SECTION = 4;
             CellIdentifier = @"SortByCell";
             nibName = @"FilterPlainCell";
             break;
-        case GENERAL_FEATURES_SECTION:
-            CellIdentifier = @"GeneralFeaturesCell";
+        case DEALS_SECTION:
+            CellIdentifier = @"DealsCell";
             nibName = @"FilterSwitchCell";
             break;
         default:
@@ -131,7 +132,11 @@ const int GENERAL_FEATURES_SECTION = 4;
         self.distanceSectionExpanded = !self.distanceSectionExpanded;
         [tableView reloadData];
     }
-    if(indexPath.section == SORT_BY_SECTION) {
+    else if(indexPath.section == CATEGORY_SECTION) {
+        self.categoriesSectionExpanded = !self.categoriesSectionExpanded;
+        [tableView reloadData];
+    }
+    else if(indexPath.section == SORT_BY_SECTION) {
         self.sortBySectionExpanded = !self.sortBySectionExpanded;
         [tableView reloadData];
     }
@@ -141,14 +146,14 @@ const int GENERAL_FEATURES_SECTION = 4;
     switch(section) {
         case PRICE_SECTION:
             return @"Price";
-        case MOST_POPULAR_SECTION:
-            return @"Most Popular";
+        case CATEGORY_SECTION:
+            return @"Category";
         case DISTANCE_SECTION:
             return @"Distance";
         case SORT_BY_SECTION:
             return @"Sort By";
-        case GENERAL_FEATURES_SECTION:
-            return @"General Features";
+        case DEALS_SECTION:
+            return @"Deals";
         default:
             return @"Error";
     }

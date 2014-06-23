@@ -28,14 +28,7 @@
     [super initViews:indexPath];
     self.indexPath = indexPath;
     
-    if(indexPath.section == 1) {
-        // most popular
-        self.descriptionLabel.text = self.filters.mostPopular[indexPath.row];
-    }
-    else {
-        // general feature
-        self.descriptionLabel.text = self.filters.generalFeatures[indexPath.row];
-    }
+    self.descriptionLabel.text = @"Deals";
 }
 
 @end
