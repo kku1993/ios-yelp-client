@@ -33,7 +33,7 @@
     
     self.restaurantNameLabel.text = self.restaurantData[@"name"];
     self.restaurantAddressLabel.text = self.restaurantData[@"location"][@"address"][0];
-    self.restaurantReviewLabel.text = [NSString stringWithFormat:@"%@ reviews", self.restaurantData[@"review_count"]];
+    //self.restaurantReviewLabel.text = [NSString stringWithFormat:@"%@ reviews", self.restaurantData[@"review_count"]];
     self.restaurantStyleLabel.text = self.restaurantData[@"categories"][0][0];
     
     return self;

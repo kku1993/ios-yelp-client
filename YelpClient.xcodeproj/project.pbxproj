@@ -23,8 +23,18 @@
 		1B83022319560DDF007ABCE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B83020B19560DDF007ABCE4 /* UIKit.framework */; };
 		1B83022B19560DDF007ABCE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B83022919560DDF007ABCE4 /* InfoPlist.strings */; };
 		1B83022D19560DDF007ABCE4 /* YelpClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B83022C19560DDF007ABCE4 /* YelpClientTests.m */; };
+		1BED08C61957F5CA009AA0F1 /* FilterPlainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BED08C51957F5CA009AA0F1 /* FilterPlainCell.xib */; };
+		1BED08C91957F609009AA0F1 /* FilterPlainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BED08C81957F609009AA0F1 /* FilterPlainCell.m */; };
 		1BF13CA01956B4D0006D83C6 /* RestaurantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF13C9F1956B4D0006D83C6 /* RestaurantCell.m */; };
 		1BF13CA21956B56A006D83C6 /* RestaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF13CA11956B56A006D83C6 /* RestaurantCell.xib */; };
+		1BF13CA61956CB80006D83C6 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF13CA41956CB80006D83C6 /* FilterViewController.m */; };
+		1BF13CA71956CB80006D83C6 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF13CA51956CB80006D83C6 /* FilterViewController.xib */; };
+		1BF13CAA1956DBAB006D83C6 /* FilterPriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF13CA91956DBAB006D83C6 /* FilterPriceCell.m */; };
+		1BF13CAC1956DBD4006D83C6 /* FilterPriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF13CAB1956DBD4006D83C6 /* FilterPriceCell.xib */; };
+		1BF13CB21956DFEE006D83C6 /* FilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF13CB11956DFEE006D83C6 /* FilterCell.m */; };
+		1BF13CB51956E0BE006D83C6 /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF13CB41956E0BE006D83C6 /* Filters.m */; };
+		1BF13CBD1956E9B9006D83C6 /* FilterSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF13CBC1956E9B9006D83C6 /* FilterSwitchCell.m */; };
+		1BF13CBF1956E9F5006D83C6 /* FilterSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF13CBE1956E9F5006D83C6 /* FilterSwitchCell.xib */; };
 		A628D520AB7D47AB8E964C0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FC74BC939246F19EFBC857 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,9 +72,25 @@
 		1B83022819560DDF007ABCE4 /* YelpClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YelpClientTests-Info.plist"; sourceTree = "<group>"; };
 		1B83022A19560DDF007ABCE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B83022C19560DDF007ABCE4 /* YelpClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpClientTests.m; sourceTree = "<group>"; };
+		1BED08C51957F5CA009AA0F1 /* FilterPlainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterPlainCell.xib; sourceTree = "<group>"; };
+		1BED08C71957F609009AA0F1 /* FilterPlainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterPlainCell.h; sourceTree = "<group>"; };
+		1BED08C81957F609009AA0F1 /* FilterPlainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterPlainCell.m; sourceTree = "<group>"; };
 		1BF13C9E1956B4D0006D83C6 /* RestaurantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantCell.h; sourceTree = "<group>"; };
 		1BF13C9F1956B4D0006D83C6 /* RestaurantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantCell.m; sourceTree = "<group>"; };
 		1BF13CA11956B56A006D83C6 /* RestaurantCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantCell.xib; sourceTree = "<group>"; };
+		1BF13CA31956CB80006D83C6 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		1BF13CA41956CB80006D83C6 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		1BF13CA51956CB80006D83C6 /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		1BF13CA81956DBAB006D83C6 /* FilterPriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterPriceCell.h; sourceTree = "<group>"; };
+		1BF13CA91956DBAB006D83C6 /* FilterPriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterPriceCell.m; sourceTree = "<group>"; };
+		1BF13CAB1956DBD4006D83C6 /* FilterPriceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterPriceCell.xib; sourceTree = "<group>"; };
+		1BF13CAE1956DECA006D83C6 /* FilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCell.h; sourceTree = "<group>"; };
+		1BF13CB11956DFEE006D83C6 /* FilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCell.m; sourceTree = "<group>"; };
+		1BF13CB31956E0BE006D83C6 /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filters.h; sourceTree = "<group>"; };
+		1BF13CB41956E0BE006D83C6 /* Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filters.m; sourceTree = "<group>"; };
+		1BF13CBB1956E9B9006D83C6 /* FilterSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterSwitchCell.h; sourceTree = "<group>"; };
+		1BF13CBC1956E9B9006D83C6 /* FilterSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterSwitchCell.m; sourceTree = "<group>"; };
+		1BF13CBE1956E9F5006D83C6 /* FilterSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterSwitchCell.xib; sourceTree = "<group>"; };
 		75FC74BC939246F19EFBC857 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +167,22 @@
 				1BF13C9E1956B4D0006D83C6 /* RestaurantCell.h */,
 				1BF13C9F1956B4D0006D83C6 /* RestaurantCell.m */,
 				1BF13CA11956B56A006D83C6 /* RestaurantCell.xib */,
+				1BF13CA31956CB80006D83C6 /* FilterViewController.h */,
+				1BF13CA41956CB80006D83C6 /* FilterViewController.m */,
+				1BF13CA51956CB80006D83C6 /* FilterViewController.xib */,
+				1BF13CA81956DBAB006D83C6 /* FilterPriceCell.h */,
+				1BF13CA91956DBAB006D83C6 /* FilterPriceCell.m */,
+				1BF13CAB1956DBD4006D83C6 /* FilterPriceCell.xib */,
+				1BF13CAE1956DECA006D83C6 /* FilterCell.h */,
+				1BF13CB11956DFEE006D83C6 /* FilterCell.m */,
+				1BF13CB31956E0BE006D83C6 /* Filters.h */,
+				1BF13CB41956E0BE006D83C6 /* Filters.m */,
+				1BF13CBB1956E9B9006D83C6 /* FilterSwitchCell.h */,
+				1BF13CBC1956E9B9006D83C6 /* FilterSwitchCell.m */,
+				1BF13CBE1956E9F5006D83C6 /* FilterSwitchCell.xib */,
+				1BED08C51957F5CA009AA0F1 /* FilterPlainCell.xib */,
+				1BED08C71957F609009AA0F1 /* FilterPlainCell.h */,
+				1BED08C81957F609009AA0F1 /* FilterPlainCell.m */,
 			);
 			path = YelpClient;
 			sourceTree = "<group>";
@@ -255,6 +297,10 @@
 				1B83021A19560DDF007ABCE4 /* Images.xcassets in Resources */,
 				1B18C5B2195615F1001B52D4 /* config.plist in Resources */,
 				1BF13CA21956B56A006D83C6 /* RestaurantCell.xib in Resources */,
+				1BF13CA71956CB80006D83C6 /* FilterViewController.xib in Resources */,
+				1BED08C61957F5CA009AA0F1 /* FilterPlainCell.xib in Resources */,
+				1BF13CBF1956E9F5006D83C6 /* FilterSwitchCell.xib in Resources */,
+				1BF13CAC1956DBD4006D83C6 /* FilterPriceCell.xib in Resources */,
 				1B18C5BA195616F2001B52D4 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,11 +353,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF13CAA1956DBAB006D83C6 /* FilterPriceCell.m in Sources */,
+				1BF13CB51956E0BE006D83C6 /* Filters.m in Sources */,
 				1BF13CA01956B4D0006D83C6 /* RestaurantCell.m in Sources */,
 				1B83021819560DDF007ABCE4 /* AppDelegate.m in Sources */,
 				1B83021419560DDF007ABCE4 /* main.m in Sources */,
 				1B18C5B519561687001B52D4 /* YelpClient.m in Sources */,
+				1BF13CB21956DFEE006D83C6 /* FilterCell.m in Sources */,
+				1BF13CA61956CB80006D83C6 /* FilterViewController.m in Sources */,
 				1B18C5B9195616F2001B52D4 /* MainViewController.m in Sources */,
+				1BF13CBD1956E9B9006D83C6 /* FilterSwitchCell.m in Sources */,
+				1BED08C91957F609009AA0F1 /* FilterPlainCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

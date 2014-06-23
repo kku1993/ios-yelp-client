@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4511" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3745"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wQq-zm-koN" customClass="FilterPriceCell">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wQq-zm-koN" id="R00-tV-jXe">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZTw-0K-Sld">
+                        <rect key="frame" x="10" y="8" width="364" height="29"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <segments>
+                            <segment title="$"/>
+                            <segment title="$$"/>
+                            <segment title="$$$"/>
+                            <segment title="$$$$"/>
+                        </segments>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZTw-0K-Sld" firstAttribute="leading" secondItem="R00-tV-jXe" secondAttribute="leading" constant="10" id="Dow-1N-GoR"/>
+                    <constraint firstItem="ZTw-0K-Sld" firstAttribute="top" secondItem="R00-tV-jXe" secondAttribute="top" constant="8" id="Y8x-Cq-oUy"/>
+                    <constraint firstAttribute="trailing" secondItem="ZTw-0K-Sld" secondAttribute="trailing" constant="10" id="pXE-Tj-Cle"/>
+                </constraints>
+            </tableViewCellContentView>
+            <gestureRecognizers/>
+            <connections>
+                <outlet property="priceSelector" destination="ZTw-0K-Sld" id="TVx-6E-RAB"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

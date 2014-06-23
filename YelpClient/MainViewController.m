@@ -19,11 +19,20 @@
 
 @implementation MainViewController
 
+- (void)onFilterButtonClicked {
+     FilterViewController *filterViewController = [[FilterViewController alloc] init];
+    [filterViewController setTitle:@"Filters"];
+    
+    [self.navigationController pushViewController:filterViewController animated:true];
+}
+
 - (void)addSearchBar {
     // add search bar in the navigation bar
     UIButton *filterButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width * 0.3, self.navigationController.navigationBar.frame.size.height - 5)];
-    [filterButton setTitle:@"Filter" forState:UIControlStateNormal];
+    [filterButton setTitle:@"Filters" forState:UIControlStateNormal];
     [filterButton sizeToFit];
+    
+    [filterButton addTarget:self action:@selector(onFilterButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     
     // gap between filter button and searchbar
     CGFloat gap = 20;
@@ -143,11 +152,12 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 200;
+    return 180;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // open restaurant detail view
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
     id data = [self.restaurants objectAtIndex:indexPath.row];
     NSLog(@"%@", data);
 }

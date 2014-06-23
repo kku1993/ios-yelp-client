@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MMProgressHUD/MMProgressHUD.h>
 
+#import "FilterViewController.h"
 #import "RestaurantCell.h"
 #import "YelpClient.h"
 
